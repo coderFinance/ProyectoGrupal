@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'AppCoder',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'Proyecto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:\\Users\\DAMIAN\\Desktop\\Node\\PythonProyecto\\ProyectoGrupal\\Proyecto\\Proyecto\\Templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

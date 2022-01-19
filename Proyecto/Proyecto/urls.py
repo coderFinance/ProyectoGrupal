@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Proyecto.views import inicio
+from Proyecto.views import inicio, inicioConTemplate
+from Proyecto.views import inicioConTemplate
+from AppCoder.views import crea_curso
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", inicio)
+    path("", inicio),
+    path("probandoTemplate", inicioConTemplate),
+    path("creaCurso", crea_curso)
 ]
