@@ -6,19 +6,19 @@ from django.shortcuts import render
 from django.template import loader
 
 def inicio(req):
-    return HttpResponse("Funciona")
+    return render(req, "Inicio.html")
 
-def inicioConTemplate(req):
+# def inicioConTemplate(req):
 
-    dic = {
-        "nombre": "Juan",
-        "apellido": "Perez"
-    }
+#     dic = {
+#         "nombre": "Juan",
+#         "apellido": "Perez"
+#     }
 
-    plantilla = loader.get_template("Inicio.html")
+#     plantilla = loader.get_template("Inicio.html")
 
-    documento = plantilla.render(dic)
+#     documento = plantilla.render(dic)
 
-    return HttpResponse(documento)
+#     return HttpResponse(documento)
 
     
