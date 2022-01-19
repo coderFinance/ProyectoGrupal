@@ -4,6 +4,14 @@
 
 
 {% block contenidoQueCambia %}
-    <p>Cursos</p>
+<p>Listado de Cursos</p>
+<ul>
+    
+    {% for curso in listaDeCursos %}
+        <li>Grado: {{curso.grado}} - Division: {{curso.division}}</li>
+        
+    {% endfor %}
+        
+</ul>
 
 {% endblock contenidoQueCambia %}

@@ -6,10 +6,10 @@ from Proyecto.views import inicio #, inicioConTemplate
 
 
 urlpatterns = [
-    path("", inicio),
+    path("", inicio, name="inicio"),
     #path("probandoTemplate", inicioConTemplate),
     path("creaCurso", crea_curso),
-    path("alumnos", alumnos),
-    path("cursos", cursos),
-    path("docentes", docentes)
+    path("alumnos", alumnos, name="alumnos"),
+    path("cursos", cursos, name="cursos"),
+    path("docentes", docentes, name="docentes")
 ]

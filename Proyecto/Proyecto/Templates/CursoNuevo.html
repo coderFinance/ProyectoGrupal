@@ -1,0 +1,11 @@
+<p>nuevo curso</p>
+
+<form action="/AppCoder/creaCurso" method="POST">{% csrf_token %}
+
+    <label>Grado:</label><input type="number" name="grado">
+    <label>Division:</label><input type="text" name="division">
+
+    <input type="submit" value="Crear">
+
+
+</form>
