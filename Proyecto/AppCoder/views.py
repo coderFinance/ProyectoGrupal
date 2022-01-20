@@ -20,6 +20,8 @@ def directivos(request):
     listaDeDirectivos = Directivos.objects.all()
     return render(request, "Directivos.html", {"lista": listaDeDirectivos})
 
+# def directivos(request):
+
 
 
 
